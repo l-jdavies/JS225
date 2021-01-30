@@ -56,6 +56,7 @@ invoices.payInvoice = function (name) {
   let newUnpaid = [];
   this.unpaid.forEach(obj => {
     if (obj.name === name) {
+      console.log(obj)
       this.paid.push(obj);
     } else {
       newUnpaid.push(obj);
